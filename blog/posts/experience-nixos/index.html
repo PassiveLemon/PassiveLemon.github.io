@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience With NixOS</title>
+    <link href="../../../images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="../style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="tab back" href="../../">Back</a>
+    </div>
+    <div class="main">
+      <div class="about">
+        <h1 class="title">My Experience With NixOS</h1>
+        <p class="information">1/19/2024, 5-6 min read</p>
+        <p>
+          Since I've been using NixOS for about a year now, I figured I would post a little bit about my experience.
+        </p>
+        <p>
+          Let's start from the beginning shall we? Growing up I was a Windows user and that was fine. All I really did was play games and use the internet, something Windows can do really well. Being a naive kid, I really didn't know anything about computers. Beginning sometime around June 2022, I started getting into more techy things like running Minecraft and Terraria servers. At the time I just used a VM provided to me by a family member so I had all that set up for me. I was only really introduced to Linux when I wanted to gain some more performance out of one of those Minecraft servers (The OS was not the issue. It was slow hardware.) and had said family member make me a Linux VM (Ubuntu Server) in which I messed around and eventually got the server set up. Fascinated with what I had learned in that time, I did some more reading about Linux and eventually made my own VM and messed around with PopOS!, Debian, and NixOS.
+        </p>
+        <p>
+          And then I discovered Docker. I freaking love this thing. I won't go into that in this blog post though. Basically seeing as Docker was not something I was going to let go any time soon and encountering many problems with it on Windows, I worked on a configuration for NixOS inside of a VM for the time I would end up switching off Windows. That time came when my Windows install completely broke and I figured that now was the time.
+        </p>
+        <p>
+          NixOS is so much more different than any other distribution. Essentially, your distro is configured in a language. Now Lemon, you may ask, what does that mean and why does it matter? Well, rather than having to change lines in various files scattered around your drive or flip toggles in various graphical menus, everything is stored in one central location in a custom programming language (Well, not everything but that's not important.) named Nix. Nix and NixOS are not the same. Nix itself is a language designed for packaging programs in a reproducible environment. NixOS takes that a step further and applies that idea to your system using the Nix language. This is the core of NixOS' declarability and immutability. Simply put, you define how your system should be set up at a base level and it will always be set up that way and will stay that way.
+        </p>
+        <p>
+          I won't get into the fine details of Nix(OS) but a key feature is the atomic rollbacks. When booting NixOS, your bootloader will contain previous generations. In this sense, a generation is just a successfully built configuration. You may use an older generation and you will enter a system that is configured using that older configuration. Forgetting what files you have changed is practically non-existent now because everything is tracked in your configuration and, when paired with a versioning system like Git, over time. What this means is that your configuration will work the same across different machines and, because of how NixOS manages packages, is super resilient to mistakes. I won't get into flakes either but they bring a whole load of features that make managing NixOS across hosts even more declarable.
+        </p>
+        <p>
+          Much more recently, I've gotten deep into homelabing. I got a Raspberry Pi and wanted to use that to assist in my home-lab. NixOS made this incredibly easy. I just made a configuration specific to Raspberry Pi and set a hostname entry in my flake. I then installed NixOS (ARM build) to an SD card and my configuration on a flash drive (Which was also used to store the Docker mounts.) and built the system with that configuration. Boom, it just built perfectly fine and now I have a Raspberry Pi (That I can SSH into for maintenance.) to offload some of my containers onto. This was really valuable for me because I still have a Windows install for dual-booting (For specific games and VR) and when I'm in that, my containers aren't running so local DNS is down, Vaultwarden is down, etc.
+        </p>
+        <p>
+          To sum it all up, NixOS is simply an incredible distro that makes system management really easy and relatively simple.
+        </p>
+        <p>
+          I might make a part 2 to this blog. There's still quite a bit I want to write about but I feel that this is good enough for a first blog and I have stuff I need to work on.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

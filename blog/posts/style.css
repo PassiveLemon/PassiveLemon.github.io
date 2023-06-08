@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
+
+* {
+  background-color: #222222;
+  color: #aaaaaa;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #303030;
+  text-align: center;
+  box-shadow: 3px 3px 10px #111111;
+}
+  .navbar a {
+    display: inline-block;
+    color: #aaaaaa;
+    padding: 4px 12px;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: #aaaaaa;
+    color: #000000;
+    transition-duration: 75ms;
+    transition-timing-function: ease;
+  }
+  .navbar a:not(:hover) {
+    transition-duration: 75ms;
+    transition-timing-function: ease;
+  }
+
+/* Below navbar */
+
+.main {
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.about {
+  background-color: #272727;
+  border-radius: 25px;
+  padding-top: 1px;
+  padding-right: 16px;
+  padding-bottom: 1px;
+  padding-left: 16px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+  font-size: 18px;
+  box-shadow: 3px 3px 10px #111111;
+  max-width: 800px;
+}
+  .about * {
+    background-color: #00000000;
+  }
+
+.information {
+  text-align: center;
+  font-size: 14px;
+}

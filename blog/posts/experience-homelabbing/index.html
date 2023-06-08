@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience Homelabing</title>
+    <link href="../../../images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="../style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="tab back" href="../../">Back</a>
+    </div>
+    <div class="main">
+      <div class="about">
+        <h1 class="title">My Experience Homelabbing</h1>
+        <p class="information">9/10/2024, 5-6 min read</p>
+        <p>
+          Hello again! Since I've been self-hosting/homelabbing for a while, I figured I should make a blog post about it. Like many, my first step was a Minecraft server. Later on came Pi-Hole and Docker, and from there it really started to kick off. Self-hosting is actually why I switched to Linux in the first place. Docker Desktop and Windows are really not great when it comes to self-hosting and dealing with Docker in WSL was a pain (memory leak galore).
+        </p>
+        <p>
+          At first I started because I wanted something, but now I do it mainly for privacy and security. You might have heard of the Lastpass data breaches... or the Facebook data breaches... or this corporation doing this, this corporation doing that. You get the point, and the point is that I would like my sensitive information to not be at the liability of corporations who do not take appropriate action to ensure user security and privacy. Let's not focus on what others are doing, after all, this is a blog post about my experience.
+        </p>
+        <p>
+          My homelab currently is just my desktop, but at some point I did have a Raspberry Pi 4B connected with Docker Swarm, which held my DNS server, DDNS updater, password manager, and other smaller services. This was mainly because I still dual-booted my desktop so when I was on Windows, I would still have access to DNS filtering and Vaultwarden. I don't use the RPi anymore because I don't dual-boot anymore and also because the SD card I had in the RPi died.
+        </p>
+        <p>
+          As for what I host now, there are 5 stacks: Torrent, media, networking, utility, and server. Torrent, as the name would suggest, holds all my services for obtaining ... <i>Linux ISOs</i> ... anyways, it has *arr services, qBittorrent, and other stuff for downloading things. The media stack, also as the name would imply, holds my services for accessing media with Jellyfin, Navidrome, AudioBookShelf, Invidious, and Komga. Here's the fun stack: Networking. Due to a recent change in living situation, I no longer have access to the network configuration, so all of my devices are connected through Tailscale. This stack holds Traefik (reverse proxy), Technitium (DNS), AirVPN, and Wireguard (deprecated due to said living condition). I only expose services through DNS. The torrent stack uses AirVPN to protect my identity and for port-forwarding my torrent clients for connectability. The last stack, utility, holds other services that I have not categorized yet: Portainer, Vaultarden, and other random services. The server stack is largely unused because I don't host servers for friends anymore due to said living situation, and coordinating everyone to use Tailscale does not sound fun.
+        </p>
+        <p>
+          The stacks have been modified countless times, and I have spent many hours just experimenting, configuring, and setting things up. But as of now, it's stable and likely won't change much as I have found the services I like and configured everything to how I need. For pretty much every service, I have tried alternatives, and the ones I have now are the ones that have stuck.
+        </p>
+        <p>
+          I also contribute to this environment too. I am the Docker compatibility maintainer for <a href="https://github.com/tobychui/zoraxy" target="_blank" rel="noopener noreferrer">Zoraxy</a> and the creator of a variety of Terraria-based Docker containers: <a href="https://github.com/PassiveLemon/terraria-docker" target="_blank" rel="noopener noreferrer">Terraria-Docker</a>, <a href="https://github.com/PassiveLemon/tmodloader1.4-docker" target="_blank" rel="noopener noreferrer">tModLoader1.4-Docker</a>, and <a href="https://github.com/PassiveLemon/terraria-backup-docker" target="_blank" rel="noopener noreferrer">Terraria-Backup-Docker</a>. Because the first two are so similar, I've thought about combining them in some way. When I needed them, I couldn't find any solutions I liked, so I created these and they are what primarily led to me learning Docker.
+        </p>
+        <p>
+          At some point in the future, I plan to buy another computer and set that up as my homeserver, where it'll be my NAS and host for self-hosting so I can keep my desktop dedicated to gaming and development. No statement for when I'll actually be able to buy it, as I don't really need it but I do want it. To anyone reading this, I recommend self-hosting, even just for fun. It doesn't need to be practical or for a purpose and it can introduce you to various topics on containerization, networking, and cyber-security.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
