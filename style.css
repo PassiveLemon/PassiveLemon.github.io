@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+  background-color: #222222;
+  color: #aaaaaa;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.greeter {
+  font-size: 20px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  transform: translate(-50%, -50%);
+}
+
+.but-github {
+  background-image: url('https://cdn.simpleicons.org/github/aaaaaa');
+  background-size: cover;
+  border: 0;
+  border-radius: 49px;
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+
+.but-github:hover {
+  transform: scale(1.1);
+  transition-duration: 50ms;
+  transition-timing-function: ease;       
+}
+
+.but-steam {
+  background-image: url('https://cdn.simpleicons.org/steam/aaaaaa');
+  background-size: cover;
+  border: 0;
+  border-radius: 49px;
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+
+.but-steam:hover {
+  transform: scale(1.1);
+  transition-duration: 50ms;
+  transition-timing-function: ease;
+}
+
+.but-discord {
+  background-image: url('https://cdn.simpleicons.org/discord/aaaaaa');
+  background-size: cover;
+  border: 0;
+  border-radius: 19px;
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+
+.but-discord:hover {
+  transform: scale(1.1);
+  transition-duration: 50ms;
+  transition-timing-function: ease;
+}
+
+.message {
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  width: 100%;
+}
