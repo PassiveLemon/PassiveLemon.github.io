@@ -91,6 +91,23 @@ body {
   transition-timing-function: ease;
 }
 
+.but-gmail {
+  background-image: url('https://cdn.simpleicons.org/gmail/aaaaaa');
+  background-size: cover;
+  border: 0;
+  border-radius: 19px;
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+
+.but-gmail:hover {
+  transform: scale(1.1);
+  transition-duration: 50ms;
+  transition-timing-function: ease;
+}
+
 .message {
   font-size: 12px;
   text-align: center;
