@@ -33,7 +33,6 @@ body {
   margin: 0px;
   text-decoration: none;
   font-size: 17px;
-  text-align: center;
 }
 
 .navbar a:hover {
@@ -46,10 +45,14 @@ body {
   color: #ffffff;
 }
 
-.header {
+/* Below navbar */
+
+.main {
+  margin: auto;
   top: 0;
-  text-align: center;
-  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .title {
@@ -60,25 +63,29 @@ body {
   width: 100%;
 }
 
-.greeter {
+.message {
   font-size: 20px;
 }
 
-.buttons {
+.button-panel {
   display: flex;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  margin-top: 50%;
+  margin-left: 7%;
   background: transparent;
-  transform: translate(-50%, -50%);
 }
 
-.buttons a {
+.button-panel a {
   margin-left: 6px;
   margin-right: 6px;
 }
 
-.but-github {
+.button:hover {
+  transform: scale(1.1);
+  transition-duration: 50ms;
+  transition-timing-function: ease;       
+}
+
+.github {
   background-image: url('https://cdn.simpleicons.org/github/aaaaaa');
   background-size: cover;
   border: 0;
@@ -88,29 +95,7 @@ body {
   height: 55px;
 }
 
-.but-github:hover {
-  transform: scale(1.1);
-  transition-duration: 50ms;
-  transition-timing-function: ease;       
-}
-
-.but-steam {
-  background-image: url('https://cdn.simpleicons.org/steam/aaaaaa');
-  background-size: cover;
-  border: 0;
-  border-radius: 49px;
-  margin-top: 10px;
-  width: 55px;
-  height: 55px;
-}
-
-.but-steam:hover {
-  transform: scale(1.1);
-  transition-duration: 50ms;
-  transition-timing-function: ease;
-}
-
-.but-discord {
+.discord {
   background-image: url('https://cdn.simpleicons.org/discord/aaaaaa');
   background-size: cover;
   border: 0;
@@ -120,13 +105,7 @@ body {
   height: 59px;
 }
 
-.but-discord:hover {
-  transform: scale(1.1);
-  transition-duration: 50ms;
-  transition-timing-function: ease;
-}
-
-.but-gmail {
+.gmail {
   background-image: url('https://cdn.simpleicons.org/gmail/aaaaaa');
   background-size: cover;
   border: 0;
@@ -136,8 +115,12 @@ body {
   height: 59px;
 }
 
-.but-gmail:hover {
-  transform: scale(1.1);
-  transition-duration: 50ms;
-  transition-timing-function: ease;
+.steam {
+  background-image: url('https://cdn.simpleicons.org/steam/aaaaaa');
+  background-size: cover;
+  border: 0;
+  border-radius: 49px;
+  margin-top: 10px;
+  width: 55px;
+  height: 55px;
 }

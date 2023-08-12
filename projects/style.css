@@ -33,7 +33,6 @@ body {
   margin: 0px;
   text-decoration: none;
   font-size: 17px;
-  text-align: center;
 }
 
 .navbar a:hover {
@@ -45,6 +44,8 @@ body {
   background-color: #535d6c;
   color: #ffffff;
 }
+
+/* Below navbar */
 
 .main {
   padding-top: 0px;
@@ -75,17 +76,23 @@ body {
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
   transition-duration: 50ms;
   transition-timing-function: ease;
 }
 
 .title {
   font-size: 33px;
+  text-decoration: none;
 }
 
 .title:hover {
   transform: scale(1.05);
+  text-decoration: underline;
   transition-duration: 50ms;
   transition-timing-function: ease;
+}
+
+.project img {
+  border-radius: 100px;
 }
