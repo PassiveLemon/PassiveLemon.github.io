@@ -7,6 +7,8 @@
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
+
+  text-align: center;
 }
 
 body {
@@ -16,19 +18,22 @@ body {
 }
 
 .navbar {
+  display: inline-block;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #333333;
+  text-align: center;
 }
 
 .navbar a {
-  float: left;
+  display: inline-block;
   color: #aaaaaa;
-  text-align: center;
   padding: 4px 12px;
+  margin: 0px;
   text-decoration: none;
   font-size: 17px;
+  text-align: center;
 }
 
 .navbar a:hover {
@@ -42,13 +47,13 @@ body {
 }
 
 .main {
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  margin-top: 8px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  margin-top: 16px;
   margin-right: auto;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   margin-left: auto;
 }
 
@@ -69,18 +74,18 @@ body {
   background-color: #292929;
 }
 
+.project:hover {
+  transform: scale(1.05);
+  transition-duration: 50ms;
+  transition-timing-function: ease;
+}
+
 .title {
-  font-size: 30px;
-  text-align: center;
-  width: 100%;
+  font-size: 33px;
 }
 
 .title:hover {
   transform: scale(1.05);
   transition-duration: 50ms;
   transition-timing-function: ease;
-}
-
-.description {
-  text-align: center;
 }

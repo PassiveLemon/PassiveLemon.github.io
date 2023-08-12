@@ -7,6 +7,8 @@
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
+
+  text-align: center;
 }
 
 body {
@@ -16,19 +18,22 @@ body {
 }
 
 .navbar {
+  display: inline-block;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #333333;
+  text-align: center;
 }
 
 .navbar a {
-  float: left;
+  display: inline-block;
   color: #aaaaaa;
-  text-align: center;
   padding: 4px 12px;
+  margin: 0px;
   text-decoration: none;
   font-size: 17px;
+  text-align: center;
 }
 
 .navbar a:hover {
@@ -57,7 +62,6 @@ body {
 
 .greeter {
   font-size: 20px;
-  text-align: center;
 }
 
 .buttons {
@@ -82,7 +86,6 @@ body {
   margin-top: 10px;
   width: 55px;
   height: 55px;
-  text-align: center;
 }
 
 .but-github:hover {
@@ -99,7 +102,6 @@ body {
   margin-top: 10px;
   width: 55px;
   height: 55px;
-  text-align: center;
 }
 
 .but-steam:hover {
@@ -112,11 +114,10 @@ body {
   background-image: url('https://cdn.simpleicons.org/discord/aaaaaa');
   background-size: cover;
   border: 0;
-  border-radius: 19px;
+  border-radius: 10px;
   margin: 8px;
   width: 64px;
-  height: 64px;
-  text-align: center;
+  height: 59px;
 }
 
 .but-discord:hover {
@@ -129,24 +130,14 @@ body {
   background-image: url('https://cdn.simpleicons.org/gmail/aaaaaa');
   background-size: cover;
   border: 0;
-  border-radius: 0px;
+  border-radius: 5px;
   margin: 8px;
   width: 64px;
-  height: 64px;
-  text-align: center;
+  height: 59px;
 }
 
 .but-gmail:hover {
   transform: scale(1.1);
   transition-duration: 50ms;
   transition-timing-function: ease;
-}
-
-.message {
-  font-size: 12px;
-  text-align: center;
-  position: fixed;
-  z-index: 100; 
-  bottom: 0; 
-  width: 100%;
 }
