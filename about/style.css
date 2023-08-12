@@ -46,46 +46,33 @@ body {
 /* Below navbar */
 
 .main {
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.main div {
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
   margin-top: 16px;
-  margin-right: 8px;
-  margin-left: 8px;
-  padding: 16px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
 }
 
-.main * {
-  background-color: #292929;
-}
-
-.leftbar {
-  border-radius: 50%;
-  text-align: left;
-  float: left;
-  width: 260px;
-  height: 260px;
-}
-
-.profilepicture {
-  width: 260px;
-  height: 260px;
-  background-color: #1f1f1f;
-  border-radius: 50%;
-}
-
-.abouttext {
-  border-radius: 25px;
-  text-align: left;
-  width: 635px;
-  float: left;
-}
-
-.abouttext img {
+.main img {
   border-radius: 100px;
+}
+
+.about {
+  background-color: #292929;
+  border-radius: 25px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+}
+
+.about * {
+  background-color: #292929;
 }
