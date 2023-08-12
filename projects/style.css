@@ -41,16 +41,46 @@ body {
   color: #ffffff;
 }
 
-.header {
-  top: 0;
+.main {
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-bottom: 8px;
+  margin-left: auto;
+}
+
+.project {
+  background-color: #292929;
+  border-radius: 25px;
+  padding-top: 16px;
+  padding-right: 60px;
+  padding-bottom: 16px;
+  padding-left: 60px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+}
+
+.project * {
+  background-color: #292929;
+}
+
+.title {
+  font-size: 30px;
   text-align: center;
   width: 100%;
 }
 
-.title {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  font-size: 50px;
+.title:hover {
+  transform: scale(1.05);
+  transition-duration: 50ms;
+  transition-timing-function: ease;
+}
+
+.description {
   text-align: center;
-  width: 100%;
 }
