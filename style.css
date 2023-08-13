@@ -7,8 +7,6 @@
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
-
-  text-align: center;
 }
 
 body {
@@ -18,7 +16,6 @@ body {
 }
 
 .navbar {
-  display: inline-block;
   top: 0;
   left: 0;
   width: 100%;
@@ -65,6 +62,7 @@ body {
 
 .message {
   font-size: 20px;
+  text-align: center;
 }
 
 .button-panel {

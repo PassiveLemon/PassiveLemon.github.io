@@ -16,7 +16,6 @@ body {
 }
 
 .navbar {
-  display: inline-block;
   top: 0;
   left: 0;
   width: 100%;
@@ -63,9 +62,9 @@ body {
 .about {
   background-color: #292929;
   border-radius: 25px;
-  padding-top: 16px;
+  padding-top: 1px;
   padding-right: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
   padding-left: 16px;
   margin-top: 0px;
   margin-right: auto;
