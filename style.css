@@ -6,7 +6,6 @@
   background-color: #222222;
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 18px;
 }
 
 body {
@@ -22,39 +21,37 @@ body {
   background-color: #333333;
   text-align: center;
 }
-
-.navbar a {
-  display: inline-block;
-  color: #aaaaaa;
-  padding: 4px 12px;
-  margin: 0px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: #aaaaaa;
-  color: #000000;
-}
-
-.navbar a.active {
-  background-color: #535d6c;
-  color: #ffffff;
-}
+  .navbar a {
+    display: inline-block;
+    color: #aaaaaa;
+    padding: 4px 12px;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a.active {
+    background-color: #535d6c;
+    color: #ffffff;
+  }
+  .navbar a:hover {
+    background-color: #aaaaaa;
+    color: #000000;
+  }
 
 /* Below navbar */
 
 .main {
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
 }
 
 .title {
-  padding-top: 10px;
-  padding-bottom: 0px;
   font-size: 50px;
   text-align: center;
   width: 100%;
@@ -67,26 +64,31 @@ body {
 
 .button-panel {
   display: flex;
-  margin-top: 50%;
-  margin-left: 7%;
-  background: transparent;
+  margin-top: 40%;
+  background-color: #292929;
+  border-radius: 100px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  font-size: 18px;
 }
-
-.button-panel a {
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-.button:hover {
-  transform: scale(1.1);
-  transition-duration: 50ms;
-  transition-timing-function: ease;       
+  .button-panel a {
+    background-color: #292929;
+    background-size: cover;
+    border: 0;
+    margin-right: 14px;
+    margin-bottom: 0px;
+    margin-left: 6px;
+  }
+  .button-panel a:hover {
+    transform: scale(1.1);
+    transition-duration: 50ms;
+    transition-timing-function: ease;       
 }
 
 .github {
   background-image: url('https://cdn.simpleicons.org/github/aaaaaa');
-  background-size: cover;
-  border: 0;
   border-radius: 49px;
   margin-top: 10px;
   width: 55px;
@@ -95,30 +97,32 @@ body {
 
 .discord {
   background-image: url('https://cdn.simpleicons.org/discord/aaaaaa');
-  background-size: cover;
-  border: 0;
   border-radius: 10px;
-  margin: 8px;
+  margin-top: 7px;
   width: 64px;
   height: 59px;
 }
 
 .gmail {
   background-image: url('https://cdn.simpleicons.org/gmail/aaaaaa');
-  background-size: cover;
-  border: 0;
   border-radius: 5px;
-  margin: 8px;
+  margin-top: 7px;
   width: 64px;
   height: 59px;
 }
 
 .steam {
   background-image: url('https://cdn.simpleicons.org/steam/aaaaaa');
-  background-size: cover;
-  border: 0;
   border-radius: 49px;
   margin-top: 10px;
   width: 55px;
   height: 55px;
+}
+
+.footer {
+  bottom: 0px;
+  width: 100%;
+  font-size: 12px;
+  position: fixed;
+  text-align: center;
 }

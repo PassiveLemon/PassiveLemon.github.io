@@ -6,13 +6,18 @@
   background-color: #222222;
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 18px;
 }
 
 body {
   display: flex;
   margin: 0;
   flex-direction: column;
+}
+
+img {
+  border-radius: 100px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 .navbar {
@@ -22,25 +27,22 @@ body {
   background-color: #333333;
   text-align: center;
 }
-
-.navbar a {
-  display: inline-block;
-  color: #aaaaaa;
-  padding: 4px 12px;
-  margin: 0px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: #aaaaaa;
-  color: #000000;
-}
-
-.navbar a.active {
-  background-color: #535d6c;
-  color: #ffffff;
-}
+  .navbar a {
+    display: inline-block;
+    color: #aaaaaa;
+    padding: 4px 12px;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a.active {
+    background-color: #535d6c;
+    color: #ffffff;
+  }
+  .navbar a:hover {
+    background-color: #aaaaaa;
+    color: #000000;
+  }
 
 /* Below navbar */
 
@@ -55,23 +57,29 @@ body {
   margin-left: auto;
 }
 
-.main img {
-  border-radius: 100px;
-}
-
 .about {
   background-color: #292929;
   border-radius: 25px;
   padding-top: 1px;
   padding-right: 16px;
-  padding-bottom: 11px;
+  padding-bottom: 16px;
   padding-left: 16px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 16px;
   margin-left: auto;
+  font-size: 18px;
 }
+  .about * {
+    background-color: #292929;
+  }
+  .about p {
+    width: 800px;
+  }
 
-.about * {
-  background-color: #292929;
+.pills {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
