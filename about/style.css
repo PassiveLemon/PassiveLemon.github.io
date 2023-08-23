@@ -18,6 +18,7 @@ img {
   border-radius: 100px;
   margin-right: 4px;
   margin-left: 4px;
+  box-shadow: 2px 2px 5px #111111;
 }
 
 .navbar {
@@ -26,6 +27,7 @@ img {
   width: 100%;
   background-color: #333333;
   text-align: center;
+  box-shadow: 3px 3px 10px #111111;
 }
   .navbar a {
     display: inline-block;
@@ -69,12 +71,11 @@ img {
   margin-bottom: 16px;
   margin-left: auto;
   font-size: 18px;
+  box-shadow: 3px 3px 10px #111111;
+  max-width: 800px;
 }
   .about * {
     background-color: #292929;
-  }
-  .about p {
-    max-width: 800px;
   }
 
 .pills {
