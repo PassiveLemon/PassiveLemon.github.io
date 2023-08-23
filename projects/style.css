@@ -83,7 +83,7 @@ img {
   }
 
 .title {
-  display: inline-block;
+  display: inline-table;
   background-color: #00000000;
   font-size: 33px;
   text-decoration: none;
@@ -96,6 +96,7 @@ img {
   }
 
 .description {
+  margin-top: -20px;
   font-size: 18px;
 }
 
