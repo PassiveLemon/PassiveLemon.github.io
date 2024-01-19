@@ -6,7 +6,6 @@
   background-color: #222222;
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
-  text-align: center;
 }
 
 body {
@@ -35,7 +34,7 @@ body {
     background-color: #535d6c;
     color: #ffffff;
   }
-  .navbar a:hover {
+  .navbar .back:hover {
     background-color: #aaaaaa;
     color: #000000;
   }
@@ -53,45 +52,32 @@ body {
   margin-left: auto;
 }
 
-.post {
+.title {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.about {
   background-color: #292929;
   border-radius: 25px;
   padding-top: 1px;
-  padding-right: 2vw;
-  padding-bottom: 0px;
-  padding-left: 2vw;
+  padding-right: 16px;
+  padding-bottom: 1px;
+  padding-left: 16px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 16px;
   margin-left: auto;
+  font-size: 18px;
   box-shadow: 3px 3px 10px #111111;
-}
-  .post * {
-    display: inline-table;
-    background-color: #292929;
-  }
-  .post:hover {
-    transform: scale(1.06);
-    transition-duration: 50ms;
-    transition-timing-function: ease;
-  }
-
-.title {
-  background-color: #00000000;
-  font-size: 33px;
-  text-decoration: none;
   max-width: 800px;
 }
-  .title:hover {
-    text-decoration: underline;
-    transition-duration: 50ms;
-    transition-timing-function: ease;
+  .about * {
+    background-color: #292929;
   }
 
-.date {
-  text-align: right;
-  align-items: right;
-  justify-content: right;
+.information {
+  text-align: center;
   font-size: 14px;
-  margin-left: 8px;
 }
