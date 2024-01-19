@@ -6,12 +6,20 @@
   background-color: #222222;
   color: #aaaaaa;
   font-family: 'Fira Sans', sans-serif;
+  text-align: center;
 }
 
 body {
   display: flex;
   margin: 0;
   flex-direction: column;
+}
+
+img {
+  border-radius: 100px;
+  margin-right: 4px;
+  margin-left: 4px;
+  box-shadow: 2px 2px 5px #111111;
 }
 
 .navbar {
@@ -46,11 +54,10 @@ body {
   padding-right: 16px;
   padding-bottom: 0px;
   padding-left: 16px;
-  margin-top: 0px;
+  margin-top: 16px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  background-color: #00000000;
 }
 
 .title {
@@ -62,21 +69,59 @@ body {
 .message {
   font-size: 20px;
   text-align: center;
+  padding-bottom: 16px;
 }
 
-.button-panel {
+.card {
   display: flex;
-  margin-top: 40%;
+  text-align: center;
   background-color: #292929;
-  border-radius: 100px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  font-size: 18px;
+  border-radius: 25px;
+  padding-top: 1px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
   box-shadow: 3px 3px 10px #111111;
 }
-  .button-panel a {
+  .card * {
+    background-color: #292929;
+  }
+  .card:hover {
+    transform: scale(1.06);
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+
+.location {
+  flex: 1;
+  display: inline-table;
+  background-color: #00000000;
+  font-size: 33px;
+  text-decoration: none;
+}
+  .location:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+
+.description {
+  text-align: center;
+  font-size: 18px;
+}
+
+.button {
+  display: flex;
+  flex: 1;
+  background-color: #292929;
+  border-radius: 100px;
+  font-size: 18px;
+}
+  .button a {
     background-color: #292929;
     background-size: cover;
     border: 0;
@@ -84,16 +129,11 @@ body {
     margin-bottom: 0px;
     margin-left: 6px;
   }
-  .button-panel a:hover {
-    transform: scale(1.1);
-    transition-duration: 50ms;
-    transition-timing-function: ease;  
-  }
 
 .github {
   background-image: url('https://cdn.simpleicons.org/github/aaaaaa');
   border-radius: 49px;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 55px;
   height: 55px;
 }
@@ -101,31 +141,23 @@ body {
 .discord {
   background-image: url('https://cdn.simpleicons.org/discord/aaaaaa');
   border-radius: 10px;
-  margin-top: 7px;
-  width: 64px;
-  height: 59px;
+  margin-top: 15px;
+  width: 55px;
+  height: 55px;
 }
 
 .gmail {
   background-image: url('https://cdn.simpleicons.org/gmail/aaaaaa');
   border-radius: 5px;
-  margin-top: 7px;
-  width: 64px;
-  height: 59px;
+  margin-top: 15px;
+  width: 55px;
+  height: 55px;
 }
 
 .steam {
   background-image: url('https://cdn.simpleicons.org/steam/aaaaaa');
   border-radius: 49px;
-  margin-top: 10px;
+  margin-top: 14px;
   width: 55px;
   height: 55px;
-}
-
-.footer {
-  bottom: 0px;
-  width: 100%;
-  font-size: 12px;
-  position: fixed;
-  text-align: center;
 }
