@@ -10,9 +10,7 @@
 }
 
 body {
-  display: flex;
   margin: 0;
-  flex-direction: column;
 }
 
 img {
@@ -26,7 +24,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333333;
+  background-color: #303030;
   text-align: center;
   box-shadow: 3px 3px 10px #111111;
 }
@@ -39,12 +37,18 @@ img {
     font-size: 17px;
   }
   .navbar a.active {
-    background-color: #535d6c;
+    background-color: #40454f;
     color: #ffffff;
   }
   .navbar a:hover {
     background-color: #aaaaaa;
     color: #000000;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+  .navbar a:not(:hover) {
+    transition-duration: 50ms;
+    transition-timing-function: ease;
   }
 
 /* Below navbar */
@@ -60,7 +64,7 @@ img {
   margin-left: auto;
 }
 
-.title {
+.username {
   font-size: 50px;
   text-align: center;
   width: 100%;
@@ -72,63 +76,68 @@ img {
   padding-bottom: 16px;
 }
 
-.card {
-  display: flex;
-  text-align: center;
-  background-color: #292929;
+.bar {
+  background-color: #272727;
   border-radius: 25px;
   padding-top: 1px;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 16px;
   margin-left: auto;
   box-shadow: 3px 3px 10px #111111;
+  max-width: 800px;
 }
-  .card * {
-    background-color: #292929;
+  .bar * {
+    background-color: #00000000;
   }
-  .card:hover {
-    transform: scale(1.06);
-    transition-duration: 50ms;
-    transition-timing-function: ease;
-  }
-
-.location {
-  flex: 1;
-  display: inline-table;
-  background-color: #00000000;
-  font-size: 33px;
-  text-decoration: none;
-}
-  .location:hover {
+  .bar:hover {
     transform: scale(1.05);
-    text-decoration: underline;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+  .bar:not(:hover) {
+    transform: scale(1);
     transition-duration: 50ms;
     transition-timing-function: ease;
   }
 
-.description {
-  text-align: center;
-  font-size: 18px;
+.title {
+  flex: 1;
+  font-size: 33px;
+  text-decoration: underline;
+  text-decoration-color: #00000000;
 }
+  .title:hover {
+    text-decoration-color: #aaaaaa;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+  .title:not(:hover) {
+    text-decoration-color: #00000000;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
 
 .button {
   display: flex;
   flex: 1;
-  background-color: #292929;
   border-radius: 100px;
   font-size: 18px;
 }
   .button a {
-    background-color: #292929;
-    background-size: cover;
-    border: 0;
     margin-right: 14px;
     margin-bottom: 0px;
     margin-left: 6px;
   }
+
+.icon {
+  background-repeat: no-repeat;
+  display: flex;
+  flex: 1;
+}
 
 .github {
   background-image: url('https://cdn.simpleicons.org/github/aaaaaa');

@@ -9,16 +9,14 @@
 }
 
 body {
-  display: flex;
   margin: 0;
-  flex-direction: column;
 }
 
 .navbar {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333333;
+  background-color: #303030;
   text-align: center;
   box-shadow: 3px 3px 10px #111111;
 }
@@ -30,13 +28,15 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
-  .navbar a.active {
-    background-color: #535d6c;
-    color: #ffffff;
-  }
-  .navbar .back:hover {
+  .navbar a:hover {
     background-color: #aaaaaa;
     color: #000000;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+  .navbar a:not(:hover) {
+    transition-duration: 50ms;
+    transition-timing-function: ease;
   }
 
 /* Below navbar */
@@ -59,7 +59,7 @@ body {
 }
 
 .about {
-  background-color: #292929;
+  background-color: #272727;
   border-radius: 25px;
   padding-top: 1px;
   padding-right: 16px;
@@ -74,7 +74,7 @@ body {
   max-width: 800px;
 }
   .about * {
-    background-color: #292929;
+    background-color: #00000000;
   }
 
 .information {

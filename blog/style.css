@@ -10,16 +10,14 @@
 }
 
 body {
-  display: flex;
   margin: 0;
-  flex-direction: column;
 }
 
 .navbar {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333333;
+  background-color: #303030;
   text-align: center;
   box-shadow: 3px 3px 10px #111111;
 }
@@ -32,12 +30,18 @@ body {
     font-size: 17px;
   }
   .navbar a.active {
-    background-color: #535d6c;
+    background-color: #40454f;
     color: #ffffff;
   }
   .navbar a:hover {
     background-color: #aaaaaa;
     color: #000000;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+  .navbar a:not(:hover) {
+    transition-duration: 50ms;
+    transition-timing-function: ease;
   }
 
 /* Below navbar */
@@ -53,40 +57,54 @@ body {
   margin-left: auto;
 }
 
-.post {
-  background-color: #292929;
+.bar {
+  background-color: #272727;
   border-radius: 25px;
   padding-top: 1px;
-  padding-right: 2vw;
+  padding-right: 16px;
   padding-bottom: 0px;
-  padding-left: 2vw;
+  padding-left: 16px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 16px;
   margin-left: auto;
   box-shadow: 3px 3px 10px #111111;
+  max-width: 800px;
 }
-  .post * {
+  .bar * {
     display: inline-table;
-    background-color: #292929;
+    background-color: #00000000;
   }
-  .post:hover {
-    transform: scale(1.06);
+  .bar:hover {
+    transform: scale(1.05);
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+  .bar:not(:hover) {
+    transform: scale(1);
     transition-duration: 50ms;
     transition-timing-function: ease;
   }
 
 .title {
-  background-color: #00000000;
   font-size: 33px;
-  text-decoration: none;
-  max-width: 800px;
+  text-decoration: underline;
+  text-decoration-color: #00000000;
 }
   .title:hover {
-    text-decoration: underline;
+    text-decoration-color: #aaaaaa;
     transition-duration: 50ms;
     transition-timing-function: ease;
   }
+  .title:not(:hover) {
+    text-decoration-color: #00000000;
+    transition-duration: 50ms;
+    transition-timing-function: ease;
+  }
+
+.description {
+  margin-top: -28px;
+}
 
 .date {
   text-align: right;
