@@ -93,12 +93,12 @@ body {
 }
   .title:hover {
     text-decoration-color: #aaaaaa;
-    transition-duration: 50ms;
+    transition-duration: 75ms;
     transition-timing-function: ease;
   }
   .title:not(:hover) {
     text-decoration-color: #00000000;
-    transition-duration: 50ms;
+    transition-duration: 75ms;
     transition-timing-function: ease;
   }
 
@@ -113,3 +113,4 @@ body {
   font-size: 14px;
   margin-left: 8px;
 }
+
