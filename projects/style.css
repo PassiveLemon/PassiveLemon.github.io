@@ -43,11 +43,11 @@ img {
   .navbar a:hover {
     background-color: #aaaaaa;
     color: #000000;
-    transition-duration: 50ms;
+    transition-duration: 75ms;
     transition-timing-function: ease;
   }
   .navbar a:not(:hover) {
-    transition-duration: 50ms;
+    transition-duration: 75ms;
     transition-timing-function: ease;
   }
 
