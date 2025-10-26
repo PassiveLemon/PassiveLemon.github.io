@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computing on College Network</title>
+    <link href="../../../images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="../style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="tab back" href="../../">Back</a>
+    </div>
+    <div class="main">
+      <div class="about">
+        <h1 class="title">Computing on College Network</h1>
+        <p class="information">10/25/2025, 4-5 min read</p>
+        <p>
+          It's been over a year since my last post so I figured I'd make one about a recent experience.
+        </p>
+        <p>
+          I've been living on my college campus for a while now, it has rather unimpressive internet and is ultimately a pain for hosting. It's not very fast, no ethernet, obviously no router configuration, etc. It wasn't much of a problem before because I only had one computer and just used Tailscale to access my DNS server and services. Recently however, I was gifted with a Ryzen 7600X, a cooler for said CPU, 64 GB of memory, and a power supply so I decided to purchase the rest of the parts to build a server/NAS. I've wanted to for a while (I even mentioned it in the previous blog) so I figured now was a good time. Remember the college internet I just mentioned? Yeah that was going to be a problem. Since I planned on transferring all of my self-hosting media and configuration data, I absolutely did not want to transfer all of that over a 100 Mb down 50 Mb up connection. It would take days.
+        </p>
+        <p>
+          Introducing, the Pi router. I remembered a Youtube video I watched a while back where a guy used a Raspberry Pi as a router to locally connect his devices to avoid similar ISP related issues. <a href="https://spencersdesk.com/projects/pi-router">He published a blog post about it on his website</a>. This was exactly the solution I was looking for. I already had an RPI 4 laying around (Just needed a new SD card) and a managed 1 GB switch so I followed the guide practically command for command, only changing the network IP a little and adding <code>'iifname "eth0" tcp dport 22 accept'</code> to the nftables configuration so I could ssh through the network. After I made sure that worked, I started setting up the server.
+        </p>
+        <p>
+          The server itself isn't much right now. What I did was take the CPU, motherboard, and memory from my desktop and put that into the server, while using the gifted hardware for my desktop. Additionally, I put in a PCIE 16x to 4x M.2 adapter card and bifurcate the 16x slot into 8x8 because I only have 2 NVME drives in it for now. It's plenty enough to migrate off my desktop and still leaves me with slots for more NVMEs. You can find more details about the two computers on my <a href="https://pcpartpicker.com/user/PassiveLemon/saved/" target="_blank" rel="noopener noreferrer">PcPartPicker</a> page. Like my other devices, I set it up with a NixOS configuration based on nixpkgs stable and headless operation (Configuration on my GitHub). I followed my standard setup procedure and made sure to configure the drives in RAID 1 with mdadm. When I get more drives, I'll change to RAID 5. I made sure I could ssh into the server without issue and then started migrating my Docker configuration and media. I simply just used Filezilla over SFTP and it only took a few hours. After running it for a few days to make sure that it was all working, I set up Borg so I could backup to the server and backup to my Hetzner storage box.
+        </p>
+        <p>
+          In the end, what I have is 2 computers networked together with a Raspberry Pi router and all on a Tailscale network for remote accessibility. The process was surprisingly smooth and there were very few hitches. The only problems I can really think of were that my Linux boot device was no longer detected on my desktop (new motherboard) so I had to reinstall the bootloader, and that I had to use an old GT 8400s for a video output to initially set up the server because the CPU (Ryzen 5600X) does not have integrated graphics.
+        </p>
+        <p>
+          It's also nice having a dedicated machine for that stuff because I dual-boot my desktop and occasionally use Windows for certain games. It's rather annoying when I have to take everything down just for a couple games that aren't playable on Linux. It already functions as a homeserver running a plethora of Docker services and a repository for backups, but I may look into using it as a remote build machine for Docker images and Nix packages. I could also pair it with my desktop for distributed building.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
